@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import InputText from './components/InputText';
+import ListText from './components/ListText';
 
 function App() {
+
+const [listQuestion, setListQuestion] = useState([]);
+const [listAnswer, setListAnswer] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='wrap'>
+      <InputText
+      listQuestion={listQuestion}
+      setListQuestion={setListQuestion}
+      listAnswer={listAnswer}
+      setListAnswer={setListAnswer}
+      />
+      <ListText
+      listQuestion={listQuestion}
+      listAnswer={listAnswer}
+      />
     </div>
   );
 }
