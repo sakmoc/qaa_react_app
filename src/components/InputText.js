@@ -50,7 +50,7 @@ const InputText = (props) => {
         </div>
 
         <div>
-          <p>Ans</p>
+          <p>Answer</p>
           <TextField
             multiline
             className='text-field'
