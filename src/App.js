@@ -10,6 +10,7 @@ const [listAnswer, setListAnswer] = useState([]);
 
   return (
     <div className='wrap'>
+      <p>fhadjhha</p>
       <InputText
       listQuestion={listQuestion}
       setListQuestion={setListQuestion}
