@@ -38,12 +38,7 @@ const InputText = (props) => {
     <div>
       <form onSubmit={(e) => handleSubmit(e)}>
         <div>
-          <p>Question</p>
-          <p>Question2</p>
-          <p>Question3</p>
-          <p>Question456</p>
-          <p>Question789</p>
-
+          <p>111</p>
           <TextField
             multiline
             className='text-field'
